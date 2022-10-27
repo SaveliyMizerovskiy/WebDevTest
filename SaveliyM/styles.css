@@ -1,0 +1,40 @@
+@media only screen and (max-width: 768px) { /*Mobile Saveliy Mizerovskiy*/
+    .images {
+      display: grid;
+      grid-template-columns: 1;
+      grid-template-rows: auto;
+      column-gap: 10px;
+      row-gap: 10px;
+    }
+  }  
+
+  @media only screen and (min-width: 768px) { /* Tablet Saveliy Mizerovskiy*/
+    .images {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 10px;
+      row-gap: 10px;
+    }
+    }
+    
+
+
+  @media only screen and (min-width: 1024px) { /* Wider screens Saveliy Mizerovskiy*/
+    .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-row: repeat(3, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    #img1{
+        grid-column: span 2;
+    }
+    
+    
+  } 
+  img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
